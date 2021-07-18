@@ -7,3 +7,4 @@
     - Created by Luciano Roberto.
     - Made using react.
     - Single Page Application.
+    - PokeAPI
