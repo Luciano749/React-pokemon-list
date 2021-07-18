@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap");
+
+/* -Reset- */
+* {
+  margin: 0;
+  padding: 0;
+
+  outline: none;
+  border: none;
+
+  -webkit-box-sizing: border-box;
+
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+html,
+body,
+#root,
+.App {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto";
+
+  overflow: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+li {
+  list-style-type: none;
+}
+
+.App {
+  background-color: rgb(63, 161, 63);
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* -Styles- */
+ul {
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+a {
+  width: 100%;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.item {
+  width: 80rem;
+
+  border: 2px solid rgb(202, 202, 23);
+  border-radius: 1rem;
+
+  padding: 2rem;
+  margin: 2rem 0;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  font-size: 2.5rem;
+  color: rgb(202, 202, 23);
+
+  cursor: pointer;
+
+  -webkit-transition: background-color 250ms, color 250ms;
+
+  -o-transition: background-color 250ms, color 250ms;
+
+  transition: background-color 250ms, color 250ms;
+}
+
+.item span {
+  background-color: rgb(195, 16, 16);
+
+  padding: 0.5rem;
+  border-radius: 1rem;
+
+  color: white;
+}
+
+.item:hover {
+  background-color: rgb(202, 202, 23);
+  color: rgb(63, 161, 63);
+}
+
+/* RESPONSIVE */
+@media (max-width: 811px) {
+  ul,
+  a,
+  .item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .item,
+  a {
+    width: 28rem;
+  }
+}

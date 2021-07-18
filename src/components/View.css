@@ -1,0 +1,128 @@
+.App {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#container h1 {
+  font-size: 8rem;
+  color: rgb(202, 202, 23);
+
+  text-transform: uppercase;
+}
+
+#container img {
+  width: 30rem;
+}
+
+#container li {
+  width: 80rem;
+
+  border: 2px solid rgb(202, 202, 23);
+  border-radius: 1rem;
+
+  padding: 2rem;
+  margin: 2rem 0;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  font-size: 2.5rem;
+  color: rgb(202, 202, 23);
+
+  cursor: pointer;
+
+  -webkit-transition: background-color 250ms, color 250ms;
+
+  -o-transition: background-color 250ms, color 250ms;
+
+  transition: background-color 250ms, color 250ms;
+}
+
+#container button {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(202, 202, 23);
+
+  border-radius: 5rem;
+  text-align: center;
+  cursor: pointer;
+
+  font-size: 3rem;
+  color: white;
+
+  -webkit-transition: background-color 250ms, color 250ms;
+
+  -o-transition: background-color 250ms, color 250ms;
+
+  transition: background-color 250ms, color 250ms;
+}
+
+#container button:hover {
+  background-color: white;
+  color: rgb(202, 202, 23);
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+  #container {
+    width: 100%;
+  }
+
+  #container li {
+    width: 95%;
+  }
+}
+
+@media (max-width: 530px) {
+  #container h1 {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 400px) {
+  #container h1 {
+    font-size: 2.8rem;
+  }
+
+  #container img {
+    width: 23rem;
+  }
+
+  #container li {
+    padding: 1rem;
+
+    font-size: 2rem;
+  }
+
+  #container button {
+    width: 4rem;
+    height: 4rem;
+    font-size: 3rem;
+  }
+}
